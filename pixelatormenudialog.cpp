@@ -53,25 +53,17 @@ ribi::Help ribi::PixelatorMenuDialog::GetHelp() const noexcept
   );
 }
 
-boost::shared_ptr<const ribi::Program> ribi::PixelatorMenuDialog::GetProgram() const noexcept
-{
-  boost::shared_ptr<const ribi::Program> p {
-    new ribi::ProgramPixelator
-  };
-  assert(p);
-  return p;
-}
-
 std::string ribi::PixelatorMenuDialog::GetVersion() const noexcept
 {
-  return "2.0";
+  return "3.0";
 }
 
 std::vector<std::string> ribi::PixelatorMenuDialog::GetVersionHistory() const noexcept
 {
   return {
     "2008-03-01: version 1.0: initial Windows-only version",
-    "2013-11-28: version 2.0: port to Qt"
+    "2013-11-28: version 2.0: port to Qt",
+    "2015-11-20: version 3.0: moved to own GitHub"
   };
 }
 
