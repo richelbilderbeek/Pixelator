@@ -3,15 +3,11 @@
 #include <cassert>
 #include <iostream>
 
-#include "richelbilderbeekprogram.h"
 #include "trace.h"
 #include "testtimer.h"
 
 int ribi::PixelatorMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   const int argc = static_cast<int>(argv.size());
   if (argc == 1)
   {
@@ -66,15 +62,3 @@ std::vector<std::string> ribi::PixelatorMenuDialog::GetVersionHistory() const no
     "2015-11-20: version 3.0: moved to own GitHub"
   };
 }
-
-#ifndef NDEBUG
-void ribi::PixelatorMenuDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-}
-#endif

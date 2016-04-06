@@ -69,10 +69,6 @@ struct PixelatorMainDialog
     const int x,
     const int y,
     const QRgb color) noexcept;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi

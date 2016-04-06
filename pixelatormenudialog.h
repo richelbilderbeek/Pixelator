@@ -15,10 +15,6 @@ struct PixelatorMenuDialog final : public MenuDialog
 
   private:
   int ExecuteSpecific(const std::vector<std::string>& argv) noexcept override;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
