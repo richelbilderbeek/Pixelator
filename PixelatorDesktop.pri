@@ -1,14 +1,14 @@
-include(../Pixelator/PixelatorConsole.pri)
+include(PixelatorConsole.pri)
 
 SOURCES += \
-    ../Pixelator/qtpixelatormaindialog.cpp \
-    ../Pixelator/qtpixelatormenudialog.cpp
+    $$PWD/qtpixelatormaindialog.cpp \
+    $$PWD/qtpixelatormenudialog.cpp
 
 HEADERS += \
-    ../Pixelator/qtpixelatormaindialog.h \
-    ../Pixelator/qtpixelatormenudialog.h
+    $$PWD/qtpixelatormaindialog.h \
+    $$PWD/qtpixelatormenudialog.h
 
 FORMS += \
-    ../Pixelator/qtpixelatormenudialog.ui \
-    ../Pixelator/qtpixelatormaindialog.ui
+    $$PWD/qtpixelatormenudialog.ui \
+    $$PWD/qtpixelatormaindialog.ui
 
