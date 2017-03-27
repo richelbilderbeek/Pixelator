@@ -35,11 +35,6 @@ private:
 
   QPixmap * m_source;
   QLabel * m_target;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
-
 };
 
 } //~namespace ribi

@@ -8,7 +8,6 @@
 #include <vector>
 #include <boost/scoped_ptr.hpp>
 #include <QImage>
-#include "trace.h"
 #pragma GCC diagnostic pop
 
 QPixmap ribi::PixelatorMainDialog::DoPixelate(const QPixmap& source, const int pixel_size) noexcept

@@ -9,8 +9,6 @@
 #include <QLabel>
 
 #include "pixelatormaindialog.h"
-#include "testtimer.h"
-#include "trace.h"
 #include "ui_qtpixelatormaindialog.h"
 #pragma GCC diagnostic pop
 
@@ -20,11 +18,7 @@ ribi::QtPixelatorMainDialog::QtPixelatorMainDialog(QWidget *parent)
     m_source{nullptr},
     m_target{nullptr}
 {
-  #ifndef NDEBUG
-  Test();
-  #endif
   ui->setupUi(this);
-
 }
 
 ribi::QtPixelatorMainDialog::~QtPixelatorMainDialog() noexcept
@@ -89,32 +83,6 @@ void ribi::QtPixelatorMainDialog::on_button_save_clicked()
 
   m_target->pixmap()->save(filename.c_str());
 }
-
-#ifndef NDEBUG
-void ribi::QtPixelatorMainDialog::Test() noexcept
-{
-  {
-    static bool is_tested{false};
-    if (is_tested) return;
-    is_tested = true;
-  }
-  const TestTimer test_timer(__func__,__FILE__,1.0);
-  QPixmap source(":/pixelator/images/PixelatorTest.png");
-  assert(!source.isNull());
-  assert(source.width() > 0);
-  assert(source.height() > 0);
-  const int max = source.width() + 1; //Be nasty
-  for (int pixel_size = 1; pixel_size != max; ++pixel_size)
-  {
-    const QPixmap target {
-      PixelatorMainDialog::DoPixelate(source,pixel_size)
-    };
-    assert(!target.isNull());
-    assert(target.width() > 0);
-    assert(target.height() > 0);
-  }
-}
-#endif
 
 void ribi::QtPixelatorMainDialog::on_pixels_valueChanged(int value)
 {
