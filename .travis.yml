@@ -37,20 +37,16 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
-  # Console test
-  - qmake -qt=qt5 PreDickAdvocaTorConsoleTest.pro
-  - make debug
-  - ./PreDickAdvocaTorConsoleTest
   # Console
-  - qmake -qt=qt5 PreDickAdvocaTorConsole.pro
+  - qmake -qt=qt5 PixelatorConsole.pro
   - make debug
-  - ./PreDickAdvocaTorConsole
+  - ./PixelatorConsole
   # Desktop
-  - qmake -qt=qt5 PreDickAdvocaTorDesktop.pro
+  - qmake -qt=qt5 PixelatorDesktop.pro
   - make debug
-  - ./PreDickAdvocaTorDesktop &
+  - ./PixelatorDesktop &
   - sleep 10
-  - sudo killall PreDickAdvocaTorDesktop
+  - sudo killall PixelatorDesktop
   # Get code coverage
   - ./get_code_cov >/dev/null
   - codecov >/dev/null
