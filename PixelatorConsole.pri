@@ -1,13 +1,12 @@
-INCLUDEPATH += \
-    ../Pixelator
+INCLUDEPATH += $$PWD
 
 HEADERS += \
-    ../Pixelator/pixelatormaindialog.h \
-    ../Pixelator/pixelatormenudialog.h
+    $$PWD/pixelatormaindialog.h \
+    $$PWD/pixelatormenudialog.h
 
 SOURCES += \
-    ../Pixelator/pixelatormaindialog.cpp \
-    ../Pixelator/pixelatormenudialog.cpp
+    $$PWD/pixelatormaindialog.cpp \
+    $$PWD/pixelatormenudialog.cpp
 
 RESOURCES += \
-    ../Pixelator/Pixelator.qrc
+    $$PWD/Pixelator.qrc

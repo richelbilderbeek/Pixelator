@@ -3,16 +3,13 @@
 #include <cassert>
 #include <iostream>
 
-#include "trace.h"
-#include "testtimer.h"
-
 int ribi::PixelatorMenuDialog::ExecuteSpecific(const std::vector<std::string>& argv) noexcept
 {
   const int argc = static_cast<int>(argv.size());
   if (argc == 1)
   {
     std::cout << GetHelp() << '\n';
-    return 1;
+    return 0;
   }
   assert(!"TODO");
   return 0;
@@ -30,8 +27,6 @@ ribi::About ribi::PixelatorMenuDialog::GetAbout() const noexcept
     GetVersion(),
     GetVersionHistory()
   );
-  a.AddLibrary("TestTimer version: " + TestTimer::GetVersion());
-  a.AddLibrary("Trace version: " + Trace::GetVersion());
   return a;
 }
 

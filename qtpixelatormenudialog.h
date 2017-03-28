@@ -29,10 +29,6 @@ private slots:
 
 private:
   Ui::QtPixelatorMenuDialog *ui;
-
-  #ifndef NDEBUG
-  static void Test() noexcept;
-  #endif
 };
 
 } //~namespace ribi
