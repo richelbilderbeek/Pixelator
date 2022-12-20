@@ -1,10 +1,5 @@
 # Pixelator
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/Pixelator.svg?branch=master)](https://travis-ci.org/richelbilderbeek/Pixelator)|[![codecov.io](https://codecov.io/github/richelbilderbeek/Pixelator/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/Pixelator/branch/master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/Pixelator.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/Pixelator)|[![codecov.io](https://codecov.io/github/richelbilderbeek/Pixelator/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/Pixelator/branch/develop)
-
 C++ tool to create a pixelated effect using Qt.
 
 ![Menu v3.0](Screenshots/PixelatorMenu_3_0.png)
