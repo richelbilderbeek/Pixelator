@@ -1,5 +1,7 @@
 # Pixelator
 
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/Pixelator/).
+
 C++ tool to create a pixelated effect using Qt.
 
 ![Menu v3.0](Screenshots/PixelatorMenu_3_0.png)
