@@ -56,4 +56,3 @@ On GNU/Linux, you can call the bash build script:
 
 Or you can open the Qt Creator project file `PixelatorDesktop.pro` and click `Run`.
 
-
