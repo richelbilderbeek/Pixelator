@@ -1,5 +1,7 @@
 # Pixelator
 
+[![Codecov](https://codecov.io/gh/richelbilderbeek/Pixelator/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/Pixelator)
+
 [Go to the nicely rendered
 website](https://richelbilderbeek.github.io/Pixelator/).
 
